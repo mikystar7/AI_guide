@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Comprehensive Guide | 다국어 버전</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    header {
+        background: linear-gradient(90deg, #00416A, #E4E5E6);
+        color: white;
+        text-align: center;
+        padding: 50px 10px;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    h2 {
+        color: #00416A;
+        border-bottom: 2px solid #00416A;
+        padding-bottom: 8px;
+    }
+    section {
+        padding: 40px 15%;
+        background-color: white;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .divider {
+        height: 2px;
+        background: linear-gradient(to right, #00416A, #E4E5E6);
+        margin: 50px auto;
+        width: 80%;
+    }
+    footer {
+        background-color: #222;
+        color: #ccc;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .lang-selector {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+    }
+    button {
+        margin: 5px;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: #00416A;
+        color: white;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0074A2;
+    }
+</style>
+</head>
+<body>
+<div class="lang-selector">
+    <button onclick="setLanguage('ko')">🇰🇷 한국어</button>
+    <button onclick="setLanguage('en')">🇺🇸 English</button>
+</div>
+
+<header>
+    <h1 id="title">AI 종합 가이드</h1>
+    <p id="subtitle">인공지능의 현재와 미래를 한눈에 이해하기 위한 심층 가이드</p>
+</header>
+
+<div id="content-ko">
+    <section>
+        <h2>1. 인공지능 소개</h2>
+        <p>인공지능(AI, Artificial Intelligence)은 인간의 사고와 학습을 모방하여 스스로 판단하는 시스템을 의미합니다. AI는 단순 자동화를 넘어 창의적 문제 해결로 발전하고 있습니다.</p>
+    </section>
+    <div class="divider"></div>
+    <section>
+        <h2>2. 머신러닝과 딥러닝</h2>
+        <p>머신러닝은 데이터를 기반으로 패턴을 학습하는 기술이며, 딥러닝은 인공신경망을 활용하여 더욱 복잡한 문제를 해결합니다.</p>
+    </section>
+    <div class="divider"></div>
+    <section>
+        <h2>3. 응용 사례</h2>
+        <p>AI는 의료 영상 분석, 금융 사기 탐지, 스마트 팩토리 등 다양한 분야에서 사용되고 있습니다.</p>
+    </section>
+    <div class="divider"></div>
+    <section>
+        <h2>4. 윤리적 문제</h2>
+        <p>AI의 발전은 데이터 편향, 개인정보 침해, 자동화로 인한 일자리 감소 등의 문제를 동반합니다.</p>
+    </section>
+    <div class="divider"></div>
+    <section>
+        <h2>5. 미래 전망</h2>
+        <p>AI는 인간과 협력하며 사회 구조를 변화시킬 것입니다. 윤리적 AI 개발과 인간 중심의 기술 철학이 중요합니다.</p>
+    </section>
+</div>
+
+<div id="content-en" style="display:none;">
+    <section>
+        <h2>1. Introduction to Artificial Intelligence</h2>
+        <p>Artificial Intelligence (AI) refers to systems capable of mimicking human thought and learning to make independent decisions. It goes beyond automation to creative problem-solving.</p>
+    </section>
+    <div class="divider"></div>
+    <section>
+        <h2>2. Machine Learning and Deep Learning</h2>
+        <p>Machine Learning is based on data-driven pattern recognition, while Deep Learning uses neural networks to solve complex problems autonomously.</p>
+    </section>
+    <div class="divider"></div>
+    <section>
+        <h2>3. Application Areas</h2>
+        <p>AI is applied across various industries — from medical imaging and financial fraud detection to smart factories.</p>
+    </section>
+    <div class="divider"></div>
+    <section>
+        <h2>4. Ethical Challenges</h2>
+        <p>The rapid growth of AI introduces issues like data bias, privacy invasion, and job displacement due to automation.</p>
+    </section>
+    <div class="divider"></div>
+    <section>
+        <h2>5. Future Outlook</h2>
+        <p>AI will reshape social structures through human collaboration. Ethical AI and human-centered innovation will be key to sustainable progress.</p>
+    </section>
+</div>
+
+<footer>
+    <p>© 2025 AI Comprehensive Guide | Designed by GPT-5</p>
+</footer>
+
+<script>
+function setLanguage(lang) {
+    if (lang === 'ko') {
+        document.getElementById('title').innerText = 'AI 종합 가이드';
+        document.getElementById('subtitle').innerText = '인공지능의 현재와 미래를 한눈에 이해하기 위한 심층 가이드';
+        document.getElementById('content-ko').style.display = 'block';
+        document.getElementById('content-en').style.display = 'none';
+    } else {
+        document.getElementById('title').innerText = 'AI Comprehensive Guide';
+        document.getElementById('subtitle').innerText = 'An in-depth guide to understanding the present and future of AI';
+        document.getElementById('content-ko').style.display = 'none';
+        document.getElementById('content-en').style.display = 'block';
+    }
+}
+</script>
+</body>
+</html>
